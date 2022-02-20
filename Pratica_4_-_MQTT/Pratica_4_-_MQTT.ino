@@ -31,8 +31,8 @@
 #define D10   1  
 
 // WIFI
-const char* SSID = "NET_2G36D69F"; // SSID / nome da rede WI-FI que deseja se conectar
-const char* PASSWORD = "4F36D69F"; // Senha da rede WI-FI que deseja se conectar
+const char* SSID = "wifiNetwork"; // SSID / nome da rede WI-FI que deseja se conectar
+const char* PASSWORD = "password"; // Senha da rede WI-FI que deseja se conectar
  
 // MQTT
 const char* BROKER_MQTT = "mqtt.eclipseprojects.io"; //URL do broker MQTT que se deseja utilizar
@@ -97,7 +97,7 @@ void initOTA()
   ArduinoOTA.setHostname("pratica-4"); // Define o nome da porta
 
   // No authentication by default
-   ArduinoOTA.setPassword((const char *)"4F36D69F"); // senha para carga via WiFi (OTA)
+   ArduinoOTA.setPassword((const char *)"password"); // senha para carga via WiFi (OTA)
   ArduinoOTA.onStart([]() {
     Serial.println("Start");
   });

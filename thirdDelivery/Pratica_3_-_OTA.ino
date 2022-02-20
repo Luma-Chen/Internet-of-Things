@@ -14,17 +14,12 @@
 #define D7    13 
 #define D8    15 
 #define D9    3  
-#define D10   1  
-
-
-                         
+#define D10   1                      
  
 // WIFI
 const char* myHostname = "escolha_um_nome"; // Nome do host na rede
 const char* SSID = "TESTE"; // SSID / nome da rede WI-FI que deseja se conectar
 const char* PASSWORD = "teste123"; // Senha da rede WI-FI que deseja se conectar
- 
-
  
 //Prototypes"
 void initSerial();
@@ -82,7 +77,7 @@ void initOTA()
   ArduinoOTA.setHostname("pratica-4"); // Define o nome da porta
 
   // No authentication by default
-   ArduinoOTA.setPassword((const char *)"4F36D69F"); // senha para carga via WiFi (OTA)
+   ArduinoOTA.setPassword((const char *)"password"); // senha para carga via WiFi (OTA)
   ArduinoOTA.onStart([]() {
     Serial.println("Start");
   });
